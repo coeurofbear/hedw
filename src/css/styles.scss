@@ -1,3 +1,20 @@
 @charset "UTF-8";
 
 @import 'modules/init';
+
+$gris-oscuro: #2e2e2e;
+
+.main-header {
+    background: {
+        color: $gris-oscuro;
+    }
+    @include scut-clearfix;
+}
+.item-menu {
+    color: #fff;
+    & + .item-menu {
+        &:before {
+            content: ' ';
+        }
+    }
+}
