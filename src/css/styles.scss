@@ -4,6 +4,11 @@
 
 $gris-oscuro: #2e2e2e;
 
+a {
+    &:hover {
+        color: #fff;
+    }
+}
 .main-header {
     background: {
         color: $gris-oscuro;
