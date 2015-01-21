@@ -20,6 +20,11 @@ a {
         left: 10px;
         right: 10px;
     }
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10000;
 }
 .item-menu {
     color: #fff;
@@ -38,6 +43,14 @@ a {
     color: #fff;
 }
 .section {
+    &.inicio {
+        background: {
+            image: url(../images/background.jpg);
+            size: cover;
+            position: center center;
+            attachment: fixed;
+        }
+    }
     &.el-comienzo {
         background: {
             color: #555;
