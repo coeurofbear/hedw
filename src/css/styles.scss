@@ -37,3 +37,10 @@ a {
 .separador {
     color: #fff;
 }
+.section {
+    &.el-comienzo {
+        background: {
+            color: #555;
+        }
+    }
+}
