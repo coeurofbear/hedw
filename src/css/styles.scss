@@ -119,3 +119,34 @@ p {
     width: 76px;
     height: 18px;
     }
+
+.recuadro-texto {
+    background-color: orange;
+    .subt {
+        background-color: red;
+    }
+    .text {
+        padding: 10px;
+    }
+}
+.el-comienzo .col-lg-4 {
+    margin-bottom: 5px;
+}
+
+#fp-nav {
+    @include breakpoint($menos600) {
+        display: none;
+    }
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+    background-color: white;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-color: white;
+    width: 12px;
+    height: 12px;
+}
