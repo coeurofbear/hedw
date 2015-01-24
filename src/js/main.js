@@ -5,6 +5,6 @@ $(function() {
         navigation: true
     });
     $.localScroll({
-    	duration: 300
+        duration: 300
     });
 });
