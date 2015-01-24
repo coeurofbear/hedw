@@ -3,6 +3,7 @@
 @import 'modules/init';
 
 $gris-oscuro: #2e2e2e;
+$menos1200: (max-width 1200px);
 
 body {
     font: {
@@ -90,11 +91,16 @@ p {
     transform: translate(-50%, -50%);
     background: {
         image: url(../images/logo_home.png);
+        size: cover;
     }
     width: 455px;
     height: 500px;
     text-indent: -9999px;
     display: block;
+    @include breakpoint($menos1200) {
+        width: 230px;
+        height: 250px;
+    }
 }
 .btn-next-slide {
     position: absolute;
