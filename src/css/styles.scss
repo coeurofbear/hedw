@@ -4,9 +4,22 @@
 
 $gris-oscuro: #2e2e2e;
 
+body {
+    font: {
+        family: 'Open Sans', sans-serif;
+    }
+}
+
 a {
     &:hover {
         color: #fff;
+    }
+}
+p {
+}
+h1 {
+    font: {
+        size: 48px;
     }
 }
 .main-header {
