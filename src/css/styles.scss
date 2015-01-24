@@ -3,7 +3,8 @@
 @import 'modules/init';
 
 $gris-oscuro: #2e2e2e;
-$menos1200: (max-width 1200px);
+$menos1200: (max-width 1280px);
+$menos600: (max-width 600px);
 
 body {
     font: {
@@ -98,9 +99,14 @@ p {
     text-indent: -9999px;
     display: block;
     @include breakpoint($menos1200) {
+        width: 337px;
+        height: 370px;
+    }
+    @include breakpoint($menos600) {
         width: 230px;
         height: 250px;
     }
+
 }
 .btn-next-slide {
     position: absolute;
