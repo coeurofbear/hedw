@@ -213,9 +213,16 @@ a {
 img[src="images/sandwich.png"] {
     width: 8%;
 }
-
 p.bajada {
     margin: {
         bottom: 30px; 
     }
+}
+img[src="images/tablas_foto.png"] {
+    position: absolute;
+    margin: {
+        bottom: 0px;
+        left: 50%;
+    }
+    transform: translateX (-50%);
 }
