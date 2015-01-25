@@ -96,6 +96,14 @@ a {
             color: #3b948f;
         }
     }
+    &.web2-0 {
+        background: {
+            image: url(../images/background_w2-0.jpg);
+            size: cover;
+            position: center center;
+            attachment: fixed;
+        }
+    }
 }
 .overlay {
     position: fixed;
