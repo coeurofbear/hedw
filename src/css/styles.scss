@@ -93,7 +93,7 @@ a {
     }
     &.con-tablas {
         background: {
-            color: #3b948f;
+            color: #278ABD;
         }
     }
     &.web2-0 {
@@ -239,7 +239,21 @@ p.bajada {
     transform: translateX(-50%);
 }
 .con-tablas .bajada {
+    font-size: 17px;
     margin: {
         bottom: 180px;
+    }
+    color: white;
+}
+.titulo-epoca-tablas {
+    color: white;
+    font: {
+        size: 45px;
+        family: 'Roboto Condensed';
+        weight: 700;
+    }
+    text-align: center;
+    margin: {
+        bottom: 40px;
     }
 }
