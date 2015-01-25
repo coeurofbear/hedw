@@ -70,7 +70,7 @@ a {
     }
     &.el-comienzo {
         background: {
-            color: #111;
+            color: #f9f9f9;
         }
     }
 }
@@ -121,8 +121,10 @@ a {
 
 .recuadro-texto {
     background-color: orange;
+    border-radius: 5px;
     .subt {
         background-color: red;
+        padding: 10px;
     }
     .text {
         padding: 10px;
