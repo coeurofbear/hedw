@@ -1,7 +1,7 @@
 $(function() {
     $('.linea-de-tiempo').fullpage({
         resize: false,
-        anchors:['inicio', 'el-comienzo', 'diseno-tablas', 'nuevas-tecnologias', 'ascenso-flash-javascript', 'web2-0', 'diseno-responsivo'],
+        anchors:['inicio', 'el-comienzo', 'diseno-tablas', 'nuevas-tecnologias', 'ascenso-flash-javascript', 'ascenso-part2', 'web2-0', 'web-digital'],
         navigation: true,
         scrollingSpeed: 450
     });
