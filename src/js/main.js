@@ -1,7 +1,7 @@
 $(function() {
     $('.linea-de-tiempo').fullpage({
         resize: false,
-        anchors:['slide1', 'slide2', 'slide3', 'slide4'],
+        anchors:['inicio', 'el-comienzo', 'diseno-tablas', 'nuevas-tecnologias', 'ascenso-flash-javascript', 'web2-0', 'diseno-responsivo'],
         navigation: true
     });
     // $.localScroll({
@@ -11,5 +11,9 @@ $(function() {
         $(this).toggleClass('activo');
         $('.menu-desplegable').slideToggle();
         $('#fp-nav').toggleClass('hide');
+    });
+    $('.enlace-epoca').click(function(){
+        $('.menu-desplegable').fadeOut('fast');
+        $('.js-menu').removeClass('activo');
     });
 });

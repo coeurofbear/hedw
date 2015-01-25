@@ -164,12 +164,15 @@ a {
 }
 .menu-desplegable {
     display: none;
-    height: 300px;
+    height: 800px;
     position: absolute;
     top: 40px;
     right: -20px;
     width: 210px;
-    background: rgba(black, .8);
+    background: rgba(black, .6);
+    padding: {
+        top: 60px;
+    }
 }
 .js-menu.activo {
     transition: .4s;
@@ -179,7 +182,25 @@ a {
 }
 .items-desplegable {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .enlace-epoca {
     color: #fff;
+    text: {
+        align: center;
+    }
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+.una-epoca {
+    margin: {
+        bottom: 30px;
+    }
+    .fecha {
+        font-weight: bold;
+        width: 100%;
+        display: inline-block;
+    }
 }
