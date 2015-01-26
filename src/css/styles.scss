@@ -88,7 +88,7 @@ a {
     }
     &.el-comienzo {
         background: {
-            color: #f9f9f9;
+            color: #efefef;
         }
     }
     &.con-tablas {
@@ -101,8 +101,12 @@ a {
             image: url(../images/background_w2-0.jpg);
             size: cover;
             position: center center;
-            attachment: fixed;
         }
+    }
+    &.ascenso {
+        background: {
+            color: #f9f9f9;
+        }               
     }
 }
 .overlay {
@@ -156,6 +160,9 @@ a {
     .subt {
         background-color: #e5e5e5;
         padding: 10px;
+        family: 'Roboto Condensed';
+        weight: 700;
+        size: 18px;
     }
     .text {
         padding: 10px;
@@ -259,13 +266,50 @@ p.bajada {
 }
 .nuevas-tecnologias .recuadro-texto {
     .subt-nt {
-        background: {
-            color: orange;
-        }
+        color: white;
+            font: {
+                family: 'Roboto Condensed';
+                weight: 700;
+                size: 18px;
+            }
+        background-color: orange;
+        padding: 15px;
     }
     .text-nt {
-        background: {
-            color: green;
-        }
+        background-color: #e1e1e1;
+        padding: 10px 15px;
+        border-radius: 0px 0px 15px 15px;
+        margin-bottom: 20px;
+    }
+}
+.nuevas-tecnologias {
+    .bajada {
+    font-size: 17px;
+    }
+    .bajada2 {
+        font-size: 15px;
+    }
+}
+.ascenso {
+    .bajada {
+    font-size: 17px;
+    }
+}
+.ascenso .recuadro-texto {
+    .subt-ascenso {
+        color: white;
+            font: {
+                family: 'Roboto Condensed';
+                weight: 700;
+                size: 18px;
+            }
+        background-color: orange;
+        padding: 15px;
+    }
+    .text-ascenso {
+        background-color: #e1e1e1;
+        padding: 10px 15px;
+        border-radius: 0px 0px 15px 15px;
+        margin-bottom: 20px;
     }
 }
