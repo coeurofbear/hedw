@@ -1,0 +1,284 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700);
+/*
+* Scut, a collection of Sass utilities
+* to ease and improve our implementations of common style-code patterns.
+* v1.1.0
+* Docs at http://davidtheclark.github.io/scut
+*/
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  -webkit-font-smoothing: antialiased; }
+
+*, *:before, *:after {
+  -webkit-font-smoothing: inherit; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0; }
+
+b {
+  font-weight: normal; }
+
+label,
+select,
+option,
+button {
+  cursor: pointer; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  button::-moz-focus-inner,
+  input[type="button"]::-moz-focus-inner,
+  input[type="submit"]::-moz-focus-inner,
+  input[type="reset"]::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+
+p:first-of-type {
+  margin-top: 0; }
+
+p:last-of-type {
+  margin-bottom: 0; }
+
+img,
+video {
+  max-width: 100%;
+  height: auto; }
+
+figure {
+  margin: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+a:hover, a:active, a:focus {
+  color: #fff;
+  text-decoration: none; }
+
+.titulo-epoca {
+  font-size: 45px;
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px; }
+
+.main-nav {
+  position: relative;
+  top: -5px; }
+
+.main-header {
+  background-color: #2e2e2e;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 900; }
+  .main-header:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.item-menu {
+  color: #fff;
+  padding: 20px;
+  line-height: 2.2; }
+
+.logo {
+  display: block;
+  text-indent: -9999px;
+  background-image: url(../images/hedw.png);
+  background-size: cover;
+  width: 103px;
+  height: 26px; }
+
+.separador {
+  color: #fff; }
+
+.section.inicio {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
+.section.el-comienzo {
+  background-color: #f9f9f9; }
+.section.con-tablas {
+  background-color: #278ABD; }
+.section.web2-0 {
+  background-image: url(../images/background_w2-0.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0; }
+
+.titulo-proyecto {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url(../images/logo_home.png);
+  background-size: cover;
+  width: 455px;
+  height: 500px;
+  text-indent: -9999px;
+  display: block; }
+  @media (max-width: 1280px) {
+    .titulo-proyecto {
+      width: 337px;
+      height: 370px; } }
+  @media (max-width: 600px) {
+    .titulo-proyecto {
+      width: 230px;
+      height: 250px; } }
+
+.btn-next-slide {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-image: url(../images/btn-next-slide.png);
+  width: 76px;
+  height: 18px; }
+
+.el-comienzo .recuadro-texto {
+  background-color: #d0d0d0;
+  border-radius: 10px; }
+  .el-comienzo .recuadro-texto .subt {
+    background-color: #e5e5e5;
+    padding: 10px; }
+  .el-comienzo .recuadro-texto .text {
+    padding: 10px; }
+
+.el-comienzo .col-lg-4 {
+  margin-bottom: 5px; }
+
+@media (max-width: 600px) {
+  #fp-nav {
+    display: none; } }
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+  background-color: #b0b0b0; }
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  border-color: #e3e3e3;
+  width: 10px;
+  height: 10px; }
+
+.menu-desplegable {
+  display: none;
+  height: 800px;
+  position: absolute;
+  top: 45px;
+  right: -20px;
+  width: 210px;
+  background: rgba(0, 0, 0, 0.6);
+  padding-top: 60px; }
+
+.js-menu.activo {
+  transition: .4s;
+  background-color: #e05924; }
+
+.items-desplegable {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.enlace-epoca {
+  color: #fff;
+  text-align: center;
+  width: 200px;
+  display: block;
+  margin: 0 auto; }
+
+.una-epoca {
+  margin-bottom: 30px; }
+  .una-epoca .fecha {
+    font-weight: bold;
+    width: 100%;
+    display: inline-block; }
+
+img[src="images/sandwich.png"] {
+  width: 8%; }
+
+p.bajada {
+  margin-bottom: 30px; }
+
+.foto-tablas {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.con-tablas .bajada {
+  font-size: 17px;
+  margin-bottom: 180px;
+  color: white; }
+
+.titulo-epoca-tablas {
+  color: white;
+  font-size: 45px;
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px; }
+
+.nuevas-tecnologias .recuadro-texto .subt-nt {
+  background-color: orange; }
+.nuevas-tecnologias .recuadro-texto .text-nt {
+  background-color: green; }
